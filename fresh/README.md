@@ -5,6 +5,8 @@
 - 즉, 상위에 있는 모든 layout.js 합쳐서 보여줌!!!!
 - 페이지 변경과 상관없이 계속 보여줄 UI는 layout.js를 사용하는게 편하다.(예 : navbar)
 
+## HTML 반복을 줄이고 싶으면 map
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
