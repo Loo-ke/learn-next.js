@@ -2,12 +2,13 @@
 // import age from "./date.js"
 
 // export {}를 import 할 때 중괄호 사용해야함
-import {age,name} from "./date.js"
+import {age,name ,test} from "./date.js"
 
 export default function Cart() {
   return (
     <div>
       <h4 className="title">Cart</h4>
+      {test}
       <CartItem />
       <CartItem />
       <CartItem />
