@@ -13,3 +13,6 @@ export default function Home() {
     </div>
   )
 }
+
+// blahblah/list로 접속하면 상품목록 페이지를 보여주도록 만들어보자!
+// URL로 페이지를 나누는 것이 라우팅
