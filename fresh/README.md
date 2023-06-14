@@ -7,14 +7,15 @@
 
 ## HTML 반복을 줄이고 싶으면 map
 
-````let arr = [2,3,4];
+```
+let arr = [2,3,4];
   arr.map((a, i)=>{
   // a = arr의 값
   // i = 반복 될 때마다 0부터 1씩 커지는 정수
   // return = 새로운 배열을 배열의 길이만큼 담아줌 /reture = 10 -> [10, 10, 10]
 
-  })```
--
+  })
+```
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
@@ -28,7 +29,7 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-````
+```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
