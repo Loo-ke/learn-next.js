@@ -122,6 +122,16 @@ let arr = [2,3,4];
 
 #### 큰 페이지는 server component, JS 기능 필요한 곳에만 client component 사용하자~!
 
+## props
+
+### props?
+
+1. `<자식Component 이름 = "전할 데이터" />`
+2. 자식은 `props.이름` 사용
+
+- 중괄호 열면 변수, 함수 등 아무거나 전송 가능
+- **자식 -> 부모 방향의 props는 불가능!!**
+
 ## Getting Started
 
 First, run the development server:
