@@ -1,3 +1,54 @@
+## Next.js 개발환경 셋팅
+
+- Node.js 설치(LTS버전, 18버전 이상)
+- 에디터 설치(vscode)
+- 코드 짤 작업 폴더 생성(이름 아무거나)
+- 만든 파일 오픈
+- 터미널 열고 명령어 입력
+
+```
+npx create-next-app@latest
+```
+
+- 프로젝트 이름 만들라고 하면 아무거나 입력
+- 타입스크립트 사용? N / Y
+- ESLint 사용? N / Y
+- src/directory 사용? N / Y
+- App router 선택하라고 하면 Y
+
+### 다 만들어 지면?!
+
+page.js에다가 작업하면 됨!!!
+
+### 내 사이트를 브라우저로 미리 보고 싶다면
+
+- 터미널에 명령어 입력
+
+```
+npm run dev
+```
+
+- 브라우저에서 localhost:3000에 접속
+- 확인
+
+## 프로젝트 파일들 설명
+
+app 폴더 : 님들이 코드짤 폴더
+
+page.js : 메인페이지
+
+layout.js : 메인페이지 감싸는 용도의 페이지
+
+public 폴더 : 이미지나 static 파일 보관용
+
+api 폴더 : 서버기능 만드는 곳
+
+next.config.js : nextjs 설정 파일
+
+node_modules 폴더 : 설치한 라이브러리 보관용 폴더
+
+package.json : 설치한 라이브러리 버전 기록용 파일
+
 ## page.js를 보여줄 때
 
 - 옆에 layout.js 있으면 그걸로 page.js를 싸맴
