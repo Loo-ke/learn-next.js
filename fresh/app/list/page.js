@@ -1,7 +1,8 @@
-import Image from 'next/image'
-import img1 from "/public/food0.png"
-import img2 from "/public/food1.png"
-import img3 from "/public/food2.png"
+// import Image from 'next/image'
+// import img1 from "/public/food0.png"
+// import img2 from "/public/food1.png"
+// import img3 from "/public/food2.png"
+
 // blahblah/list로 접속하면 상품목록 페이지를 보여주도록 만들어보자!
 // URL로 페이지를 나누는 것이 라우팅
 export default function List() {
@@ -21,7 +22,7 @@ export default function List() {
         상품.map((a, i)=>{
           return (
           <div className="food" key={i}>
-            <Image src={img1} className="food-img" />
+            <img src={`/food${i}.png`} className="food-img" />
             <h4>{상품[i]} $40</h4>
           </div>
           )
