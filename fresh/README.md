@@ -1,3 +1,10 @@
+## page.js를 보여줄 때
+
+- 옆에 layout.js 있으면 그걸로 page.js를 싸맴
+- 상위 폴더에 layout.js 있으면 그걸로 1번 싸맴
+- 즉, 상위에 있는 모든 layout.js 합쳐서 보여줌!!!!
+- 페이지 변경과 상관없이 계속 보여줄 UI는 layout.js를 사용하는게 편하다.(예 : navbar)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
