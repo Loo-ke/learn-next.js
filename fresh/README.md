@@ -67,6 +67,23 @@ let arr = [2,3,4];
   })
 ```
 
+## 이미지 넣기
+
+### 최적화 된 이미지 넣기
+
+**왜 이 방법을 사용할까?**
+
+- lazy loading
+- 사이즈 최적화
+- layout shift 방지 (이미지 로딩이 느려서 사이트가 밀려나는 현상)
+
+### 최적화된 이미지를 넣으려면?
+
+1. `import Image from "next/Image"`
+2. `<Image />` 사용
+3. 이미지를 import 해서 경로에 넣어야함
+   `<Image src={img1} />`
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
