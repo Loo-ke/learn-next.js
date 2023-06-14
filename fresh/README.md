@@ -84,6 +84,44 @@ let arr = [2,3,4];
 3. 이미지를 import 해서 경로에 넣어야함
    `<Image src={img1} />`
 
+## component 만들기
+
+1. `function 이름 (){}`
+2. `return (반복할 html)`
+3. `<이름 />`사용
+
+### 컴포넌트 단점 = 데이터 공유가 귀찮음
+
+### 왜 사용?
+
+- 더러운 코드 한 단어로 축약
+- 같은 코드 재사용
+
+## Next.js에서의 컴포넌트
+
+### 1. server component
+
+- 대충 아무데나 만든 컴포넌트 = **server component**
+- html에 자바스크립트 기능 넣기 **불가능**
+- useState, useEffect 등 사용 불가
+- 장점
+
+1. 로딩 속도 빠름
+2. 검색 엔진 노출 유리
+
+### 2. client component
+
+- 파일 맨 위에 'use client'를 넣고 만든 컴포넌트 = **client component**
+  (무조건 맨 위에 'use client')
+- html에 자바스크립트 기능 넣기 **가능**
+- useState, useEffect 등 사용 가능
+- 단점
+
+1. 로딩 속도 느림(자바스크립트 많이 필요)
+2. 로딩 속도 느림(hydration 필요)
+
+#### 큰 페이지는 server component, JS 기능 필요한 곳에만 client component 사용하자~!
+
 ## Getting Started
 
 First, run the development server:
