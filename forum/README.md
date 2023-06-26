@@ -31,7 +31,7 @@ export { connectDB }
 
 ## 게시판 기능
 
-### - 글목록 조회기능
+### 글목록 조회기능
 
 #### 1. HTML 페이지 만들기
 
@@ -64,11 +64,11 @@ export default async function List() {
 }
 ```
 
-### - 상세페이지
+### 상세페이지
 
-### - 글발행기능
+### 글발행기능
 
-### - 수정삭제기능
+### 수정삭제기능
 
 ## Getting Started
 
