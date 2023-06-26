@@ -21,18 +21,6 @@ export default function List() {
   return (
     <div>
       <h2 className="title">상품목록</h2>
-      <span> {count[0]} </span>
-      <button onClick={()=>{
-        let copy =  [...count]
-        copy[0]++
-        setCount(copy)
-      }}>+</button>
-      <span> {count[1]} </span>
-      <button onClick={()=>{setCount(count++)}}>+</button>
-      <span> {count[2]} </span>
-      <button onClick={()=>{setCount(count++)}}>+</button>
-
-
       {
         상품.map((a, i)=>{
           return (
@@ -40,8 +28,11 @@ export default function List() {
             <img src={`/food${i}.png`} className="food-img" />
             <h4>{상품[i]} $40</h4>
             <span> {count[i]} </span>
-            <button onClick={()=>{setCount(count++)}}>+</button>
-            <button onClick={()=>{setCount(count--)}}>-</button>
+            <button onClick={()=>{
+              let copy =  [...count]
+              copy[i]++
+              setCount(copy)
+            }}>+</button>
           </div>
           )
         })    
