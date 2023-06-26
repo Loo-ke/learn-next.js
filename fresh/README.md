@@ -140,15 +140,15 @@ let arr = [2,3,4];
 
 #### 이런 기능은 client component 안에서만 만들 수 있다.
 
-## 자바스크립트 기능을 사용하려면 client component
+### 자바스크립트 기능을 사용하려면 client component
 
 - 우리가 만든 컴포넌트들은 server component이다.
 - 따라서 html안에 자바스크립트 기능을 넣을 수 없다!
 - **파일 맨 위에 `use client` 작성하자!**
 
-## state
+### state
 
-### 사용 방법
+#### 사용 방법
 
 1. 파일 맨 위에`'use client'`
 2. 그 아래에 `import {useState} from 'react';`
