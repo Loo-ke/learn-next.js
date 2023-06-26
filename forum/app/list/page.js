@@ -6,14 +6,16 @@ export default async function List() {
   let result = await db.collection('post').find().toArray()
   return (
     <div className="list-bg">
-      <div className="list-item">
-        <h4>{result[0].title}</h4>
-        <p>{result[0].content}</p>
-      </div>
-      <div className="list-item">
-      <h4>{result[1].title}</h4>
-        <p>{result[1].content}</p>
-      </div>
+      {
+        result.map((a,i)=>{
+          return(
+            <div className="list-item">
+              <h4>{result[i].title}</h4>
+              <p>{result[i].content}</p>
+            </div>
+          )
+        })  
+      }
     </div>
   )
 } 
