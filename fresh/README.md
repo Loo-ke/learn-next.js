@@ -132,6 +132,28 @@ let arr = [2,3,4];
 - 중괄호 열면 변수, 함수 등 아무거나 전송 가능
 - **자식 -> 부모 방향의 props는 불가능!!**
 
+## useState, onClick
+
+### onClick
+
+- html 요소에 `onClick={()=>{function}}`을 넣으면 자바스크립트를 실행해줌
+
+#### 이런 기능은 client component 안에서만 만들 수 있다.
+
+## 자바스크립트 기능을 사용하려면 client component
+
+- 우리가 만든 컴포넌트들은 server component이다.
+- 따라서 html안에 자바스크립트 기능을 넣을 수 없다!
+- **파일 맨 위에 `use client` 작성하자!**
+
+## state
+
+### 사용 방법
+
+1. 파일 맨 위에`'use client'`
+2. 그 아래에 `import {useState} from 'react';`
+3. component 함수 안에 `let [변수이름, 함수이름] = useState(변수에 넣을 값);`
+
 ## Getting Started
 
 First, run the development server:
