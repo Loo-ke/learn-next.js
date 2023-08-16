@@ -1,10 +1,9 @@
 import { connectDB } from "@/util/database";
 import {ObjectId} from 'mongodb'
 
-export default async function Detail(){
+export default async function Detail(props){
   const db = (await connectDB).db("forum")
-  let result = await db.collection('post').findOne({_id : new ObjectId("6499bb60e16b921bdcb7393e")})
-  // console.log(result)
+  let result = await db.collection('post').findOne({_id : new ObjectId(props.params.subPages)})
   return (
     <div>
       <h4>상세페이지</h4>

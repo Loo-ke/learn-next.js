@@ -71,7 +71,33 @@ export default async function List() {
 - /list/detail/어쩌구저쩌구
   디테일은 동일한데 디테일 뒤에 붙는 url이 계속 달라질땐 다이나믹라우터를 사용해보자
 - url이 달라도 보이는 내용이 똑같은데..?
-  -
+  - 컴포넌트에 props를 입력하면 부모요소에서 가져온 값 뿐만 아니라 url에 입력된 정보도 가져올 수 있다!
+
+#### list 페이지에서 list 클릭 시 이동하게 만들어보자
+
+#### useRouter
+
+'use client' 환경에서만 사용 가능
+`import {useRouter} from "next/navigation"`
+`useRouter().push('이동할 경로')`
+
+#### 왜 사용?
+
+- 뒤로 가기, 앞으로 가기 등 다양한 기능 지원
+
+```
+const router = useRouter()
+router.back() //뒤로 가기
+router.forward() //앞으로 가기
+router.refresh() //바뀐 내용만 새로고침
+router.prefetch() //
+```
+
+```
+usePathname() // 현재 URL 출력
+useSertchParams() // 쿼리스트링 출력
+useparams() // 유저가 [다이나믹 라우트]에 입력한 내용 출력
+```
 
 ### 글발행기능
 
