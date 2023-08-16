@@ -6,9 +6,6 @@ export default async function List() {
   const client = await connectDB;
   const db = client.db("forum")
   let result = await db.collection('post').find().toArray()
-  async function moveToDetail(id){
-
-  }
   return (
     <div className="list-bg">
       {
