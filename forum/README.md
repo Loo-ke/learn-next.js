@@ -109,6 +109,12 @@ useparams() // 유저가 [다이나믹 라우트]에 입력한 내용 출력
 
 ### 수정삭제기능
 
+#### 기능 만들기
+
+1. 글마다 수정버튼, 누르면 수정페이지 이동
+2. 수정페이지 만듬(글 가져와서 채워야함)
+3. 등록 누르면 DB에 글 수정
+
 ## Getting Started
 
 First, run the development server:

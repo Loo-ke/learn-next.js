@@ -13,7 +13,8 @@ export default async function List() {
           return(
             <div className="list-item" key={i}>
               <Link href={`/detail/${result[i]._id}`}><h4>{result[i].title}</h4></Link>
-              <DetailLink></DetailLink>
+              <Link href={`/edit/${result[i]._id}`} className="edit">수정</Link>
+              {/* <DetailLink></DetailLink> */}
               <p>{result[i].content}</p>
             </div>
           )

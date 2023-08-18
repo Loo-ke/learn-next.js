@@ -34,3 +34,25 @@ button {
   border: none;
   border-radius: 5px;
 }
+a {
+  text-decoration: none;
+  color: #000;
+}
+.edit {
+  background-color: rgb(219, 212, 204);
+  margin: 1px;
+  padding: 0 0.5rem;
+  border-radius: 10px;
+}
+.navbar {
+  background: white;
+  padding: 20px;
+}
+.navbar a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: black;
+}
+.logo {
+  font-weight: bold;
+}
