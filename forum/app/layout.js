@@ -1,7 +1,7 @@
 import './globals.css'
 import Link from 'next/link'
 import { Inter } from 'next/font/google'
-import LoginBtn from './login'
+import {LoginBtn, LogoutBtn} from './login'
 import { getServerSession } from 'next-auth'
 import { authOptions } from '@/pages/api/auth/[...nextauth]'
 
@@ -19,7 +19,10 @@ export default async function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
       <div className="navbar"> 
-      <LoginBtn></LoginBtn>
+      {
+        check ? <span>{check.user.name}<LogoutBtn></LogoutBtn></span> : <LoginBtn></LoginBtn>  
+      }
+      
   <Link href="/" className="logo">Appleforum</Link> 
   <Link href="/list">List</Link> 
 </div>  {children}</body>
