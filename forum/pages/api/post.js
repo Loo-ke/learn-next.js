@@ -2,7 +2,6 @@ import { connectDB } from "@/util/database";
 
 export default async function handler(req,res){
   const data = req.body;
-  console.log(data)
   const {_id, title, content} = data;
   if(req.method == 'POST'){
     if(data.title == "" || data.content == ""){
