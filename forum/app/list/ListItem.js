@@ -16,7 +16,7 @@ export default function ListItem({result}){
             <div className="list-item" key={i}>
               <Link href={`/detail/${data._id}`}><h4>{data.title}</h4></Link>
               <Link href={`/edit/${data._id}`} className="edit">수정</Link>
-              <span onClick={()=>{
+              <span style={{cursor:'pointer', border:'1px solid black', borderRadius:"10px", padding:'0 6px', marginLeft:'3px'}} onClick={()=>{
                 fetch('/api/delete' , {
                   method : "POST", body:data._id
                 })

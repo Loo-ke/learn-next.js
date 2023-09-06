@@ -1,4 +1,12 @@
+import { authOptions } from "@/pages/api/auth/[...nextauth]"
+import { getServerSession } from "next-auth"
+
 export default async function Write() {
+  let session = await getServerSession(authOptions)
+
+  if(session){
+    
+  }
   return (
     <div className="p-20">
       <form action="/api/post" method="POST">

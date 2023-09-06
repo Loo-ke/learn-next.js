@@ -19,13 +19,13 @@ export default async function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
       <div className="navbar"> 
+      
+      <Link href="/" className="logo">Appleforum</Link> 
+      <Link href="/list">List</Link> 
       {
         check ? <span>{check.user.name}<LogoutBtn></LogoutBtn></span> : <LoginBtn></LoginBtn>  
       }
-      
-  <Link href="/" className="logo">Appleforum</Link> 
-  <Link href="/list">List</Link> 
-</div>  {children}</body>
+      </div>  {children}</body>
     </html>
   )
 }
