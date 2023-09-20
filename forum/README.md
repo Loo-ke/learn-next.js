@@ -115,6 +115,16 @@ useparams() // 유저가 [다이나믹 라우트]에 입력한 내용 출력
 2. 수정페이지 만듬(글 가져와서 채워야함)
 3. 등록 누르면 DB에 글 수정
 
+#### 배포?
+
+1. 터미널에서 'npm run build'
+
+- 코드 짠거를 html, css, js로 만들어줌
+- 동그라미기호 = static rendering
+- 람다 기호 = dinamic rendering (유저가 페이지 접속때마다 html을 새로 만들어서 보내줌)
+
+2. npm run start
+
 ## Getting Started
 
 First, run the development server:
