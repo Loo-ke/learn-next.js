@@ -121,9 +121,50 @@ useparams() // 유저가 [다이나믹 라우트]에 입력한 내용 출력
 
 - 코드 짠거를 html, css, js로 만들어줌
 - 동그라미기호 = static rendering
-- 람다 기호 = dinamic rendering (유저가 페이지 접속때마다 html을 새로 만들어서 보내줌)
+- 람다 기호 = dynamic rendering (유저가 페이지 접속때마다 html을 새로 만들어서 보내줌)
 
 2. npm run start
+
+#### static rendering에서 dynamic rendering으로 바꾸기
+
+- 해당 페이지 코드에 접속해 `export const dynamic = 'force-dynamic` 작성
+  - 서버나 DB 부담이 심해질 수 있음
+  - 캐싱기능을 사용하면 괜찮(캐싱 = 결과를 잠깐 저장해두고 재사용) / (페이지 캐싱 = 페이지 완성본을 잠깐 저장하고 재사용)
+    - GET 요청 결과를 캐싱할 수 있음
+- 반대로 static은 `export const static = 'force-static`
+
+### 로그인 기능
+
+#### OAUTH
+
+- 구글 등에서 로그인 계정 정보를 빌려옴
+
+#### next-auth
+
+- `npm install next-auth`
+
+##### next-auth 세팅
+
+1. api 폴더 안에 auth 폴더 생성
+2. [...nextauth].js 파일 생성
+3. 코드 작성
+
+#### session 방식
+
+- DB adapter
+  1. 첫 로그인 시 자동 회원가입(DB에 보관)
+  2. 로그인 시 DB에 세션정보 보관
+  3. 현재 로그인된 유저정보 DB에서 조회
+
+#### DBadapter
+
+- 세팅
+
+1. `npm install @next-auth/mongodb-adapter`
+2. `npm run dev`
+3. [...nextauth].js 파일에 authOptions 안에 `adapter : MongoDBAdapter(connectDB)`추가
+
+- 다른 DB 쓰려면 다른 DB adapter 찾아서 사용
 
 ## Getting Started
 

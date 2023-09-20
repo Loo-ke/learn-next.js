@@ -2,14 +2,11 @@ import { connectDB } from "@/util/database";
 import Link from 'next/link'
 import DetailLink from "./DetailLink";
 import ListItem from "./ListItem";
-import { getServerSession } from 'next-auth'
-import { authOptions } from '@/pages/api/auth/[...nextauth]'
 
 // 60초동안 페이지 캐싱
-// export const revalidate = 60;
+export const revalidate = 20;
 
 export default async function List() {
-  
   const client = await connectDB;
   const db = client.db("forum")
   let result = await db.collection('post').find().toArray()

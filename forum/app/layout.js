@@ -14,16 +14,16 @@ export const metadata = {
 
 export default async function RootLayout({ children }) {
   let check = await getServerSession(authOptions)
-  console.log(check)
   return (
     <html lang="en">
       <body className={inter.className}>
       <div className="navbar"> 
       
       <Link href="/" className="logo">Appleforum</Link> 
+      <Link href="/write">Write</Link> 
       <Link href="/list">List</Link> 
       {
-        check ? <span>{check.user.name}<LogoutBtn></LogoutBtn></span> : <LoginBtn></LoginBtn>  
+        check ? <span>{check.user.name} <LogoutBtn></LogoutBtn></span> : <LoginBtn></LoginBtn>  
       }
       </div>  {children}</body>
     </html>

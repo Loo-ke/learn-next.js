@@ -9,8 +9,7 @@ export default async function Home() {
   let result = await db.collection('post').find().toArray()
   return (
     <div>
-      title : {result[0].title}<br></br>
-      content : {result[0].content}
+      안녕
     </div>
   )
 }

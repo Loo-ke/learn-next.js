@@ -1,9 +1,8 @@
 'use client'
 import Link from "next/link"
 
-
 export default function ListItem({result}){
-  // console.log("!!!!",session)
+    
   return (
     <div>
       {
@@ -37,7 +36,6 @@ export default function ListItem({result}){
               }}>삭제</span>
               {/* <DetailLink></DetailLink> */}
               <p>{result[i].content}</p>
-              <p>작성자 : {result[i].auth}</p>
             </div>
           )
         })  
